@@ -1,0 +1,8 @@
+@for (letter of displayedText; track $index) {
+<app-typing-letter
+  [char]="letter"
+  [currentIndex]="currentIndex"
+  [isCorrect]="isCorrectIndex($index)"
+  [index]="$index"
+></app-typing-letter>
+}
